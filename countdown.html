@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown</title>
+</head>
+<style type="text/css">
+  body{
+    background-image: url("l1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+	#demo{
+		height: 200px;
+    width: 500px;
+    text-align: center;
+    font-size: 100px;
+    margin: auto;
+    color:white;
+  
+	}
+  h1{
+    text-align: center;
+    color: white;
+  }
+  .btn{
+    text-align: center;
+  }
+  h3{
+    color:red;
+  }
+
+</style>
+<body>
+<h1>CountDown Demo</h1>
+	<div id="demo"></div>
+
+
+
+<script type="text/javascript">
+	var numb=[0,1,2,3,4,5,6,7,8,9,10];
+  var i=11;
+  var set = setInterval(countdown,1000);
+  
+
+  function countdown()
+  {
+    i--;
+    document.getElementById('demo').innerHTML = numb[i];
+    if(i<0){
+      document.getElementById('demo').innerHTML = " <h3>time expired</h3>" 
+    }
+  }
+
+
+
+</script>
+</body>
+</html>
